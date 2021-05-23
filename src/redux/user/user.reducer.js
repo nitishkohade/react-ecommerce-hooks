@@ -27,6 +27,11 @@ const userReducer = (state = initial_state, action) => {
                 ...state,
                 error: action.payload
             }
+        case 'DUMMY':
+            return {
+                ...state,
+                dummy: "adasdsad"
+            }
         default:
             return state
     }
